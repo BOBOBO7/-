@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form method="POST" action="/PM/SendSmsServlet">
+    <div class="row">
+        <label>账号: </label><input name="userId">
+    </div>
+    <div class="row">
+        <label>密码:</label><input name="password">
+    </div>
+    <div class="row">
+        <label>手机号:</label><input name="mobile">
+    </div>
+    <div class="row">
+        <label>验证码:</label>
+        <input name="verifyCode">
+        <button type="submit" class="sendVerifyCode">获取短信验证码</button>
+    </div>
+    <div><button type="submit" class="sub-btn">提交</button></div>
+</form>
+<script src="js/register.js"></script>
+</body>
+</html>
